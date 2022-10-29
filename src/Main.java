@@ -20,7 +20,7 @@ public class Main {
             System.out.println(person.getName() + " " + person.getSurname() + " прокатился на аттракционе!");
             person.setTickets(person.getTickets() - 1);
             if (person.getTickets() != 0) {
-                queueAttraction.add(person);
+                queueAttraction.offer(person);
             }
         }
     }
